@@ -87,17 +87,6 @@ footer {
    RESPONSIVE DESIGN
    =========================== */
 
-/* Schermi medi (tablet) */
-@media (max-width: 900px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    .navbar ul {
-        gap: 15px;
-    }
-}
-
 /* Schermi piccoli (smartphone) */
 @media (max-width: 700px) {
 
