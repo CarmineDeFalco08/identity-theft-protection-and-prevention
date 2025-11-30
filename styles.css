@@ -1,6 +1,4 @@
-/* ===========================
-   STILE GENERALE DELLA PAGINA
-   =========================== */
+/*STILE GENERALE DELLA PAGINA*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,9 +9,7 @@ body {
     color: #222;
 }
 
-/* ===========================
-   HEADER
-   =========================== */
+/*HEADER*/
 header {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -26,9 +22,7 @@ header h1 {
     font-size: 2rem;
 }
 
-/* ===========================
-   NAVBAR
-   =========================== */
+/*NAVBAR*/
 .navbar {
     background: rgba(0, 0, 0, 0.6);
     padding: 10px 0;
@@ -59,22 +53,17 @@ header h1 {
     color: #00aaff;
 }
 
-/* ===========================
-   CONTENUTO PRINCIPALE
-   =========================== */
+/*CONTENUTO PRINCIPALE*/
 main {
     padding: 1.5em;
     background-color: rgba(255, 255, 255, 0.85);
     margin: 2em auto;
     border-radius: 10px;
     width: 90%;         /* Adattabile su mobile */
-    max-width: 900px;   /* Limite per schermi grandi */
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
+/*FOOTER*/
 footer {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -83,9 +72,7 @@ footer {
     margin-top: 2em;
 }
 
-/* ===========================
-   RESPONSIVE DESIGN
-   =========================== */
+/*RESPONSIVE DESIGN*/
 
 /* Schermi piccoli (smartphone) */
 @media (max-width: 700px) {
