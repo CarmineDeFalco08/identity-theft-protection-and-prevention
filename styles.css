@@ -1,15 +1,22 @@
-/*STILE GENERALE DELLA PAGINA*/
-body {
-    font-family: Arial, sans-serif;
+/* ===========================
+   STILE GENERALE DELLA PAGINA
+   =========================== */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll; /* più compatibile su mobile */
+    background-attachment: fixed;
     color: #222;
+    padding: 0;
 }
 
-/*HEADER*/
+/* ===========================
+   HEADER
+   =========================== */
 header {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -22,7 +29,9 @@ header h1 {
     font-size: 2rem;
 }
 
-/*NAVBAR*/
+/* ===========================
+   NAVBAR
+   =========================== */
 .navbar {
     background: rgba(0, 0, 0, 0.6);
     padding: 10px 0;
@@ -53,8 +62,11 @@ header h1 {
     color: #00aaff;
 }
 
-/*CONTENUTO PRINCIPALE*/
+/* ===========================
+   CONTENUTO PRINCIPALE
+   =========================== */
 main {
+    flex: 1; /* Occupa lo spazio rimanente, spingendo il footer in basso */
     padding: 1.5em;
     background-color: rgba(255, 255, 255, 0.85);
     margin: 2em auto;
@@ -63,7 +75,9 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/*FOOTER*/
+/* ===========================
+   FOOTER
+   =========================== */
 footer {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -72,7 +86,20 @@ footer {
     margin-top: 2em;
 }
 
-/*RESPONSIVE DESIGN*/
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+/* Schermi medi (tablet) */
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+}
 
 /* Schermi piccoli (smartphone) */
 @media (max-width: 700px) {
