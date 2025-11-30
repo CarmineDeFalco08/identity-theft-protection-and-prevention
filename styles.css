@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header, footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Cambia menu in main (perché <menu> non è adatto) */
+main {
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 2em;
+    border-radius: 10px;
+}
+/* NAVBAR */
+.navbar {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00aaff;
+}
