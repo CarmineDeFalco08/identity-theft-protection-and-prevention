@@ -1,51 +1,125 @@
+/* ===========================
+   STILE GENERALE DELLA PAGINA
+   =========================== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll; /* più compatibile su mobile */
+    color: #222;
 }
 
-header, footer {
+/* ===========================
+   HEADER
+   =========================== */
+header {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 1.5em 1em;
 }
 
-/* Cambia menu in main (perché <menu> non è adatto) */
-main {
-    padding: 2em;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 2em;
-    border-radius: 10px;
+header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
-/* NAVBAR */
+
+/* ===========================
+   NAVBAR
+   =========================== */
 .navbar {
     background: rgba(0, 0, 0, 0.6);
     padding: 10px 0;
-    text-align: center;
 }
 
 .navbar ul {
     list-style: none;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     padding: 0;
+    margin: 0;
 }
 
 .navbar li {
-    display: inline-block;
-    margin: 0 15px;
+    list-style: none;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
     font-weight: 600;
+    padding: 10px;
     transition: 0.3s;
 }
 
 .navbar a:hover {
     color: #00aaff;
+}
+
+/* ===========================
+   CONTENUTO PRINCIPALE
+   =========================== */
+main {
+    padding: 1.5em;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 2em auto;
+    border-radius: 10px;
+    width: 90%;         /* Adattabile su mobile */
+    max-width: 900px;   /* Limite per schermi grandi */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+/* Schermi medi (tablet) */
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+}
+
+/* Schermi piccoli (smartphone) */
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* La navbar diventa verticale */
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    main {
+        margin: 1em auto;
+        padding: 1em;
+    }
 }
