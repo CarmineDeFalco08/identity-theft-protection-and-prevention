@@ -87,6 +87,10 @@ main p {
     font-family: 'Heebo', sans-serif;
 }
 
+main p b {
+    font-weight: 700;
+}
+
 footer {
     background: linear-gradient(90deg, rgba(88, 17, 202, 0.1) 10%, rgba(55, 28, 156, 0.9) 90%);
     color: white;
