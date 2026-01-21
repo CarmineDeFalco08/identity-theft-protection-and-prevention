@@ -9,35 +9,37 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #f0f2f5; 
+    background-color: #0d0a2c; 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #1a1a2e;
+    color: #DCD7E5;
 }
 
 
 header {
-    background: linear-gradient(135deg, rgba(26, 35, 126, 0.85) 0%, rgba(41, 128, 185, 0.85) 100%);
+    background: linear-gradient(135deg, rgba(88, 17, 202, 0.1) 10%, rgba(55, 28, 156, 0.9) 90%);
     color: white;
     text-align: center;
     padding: 1.5em 1em;
-    border-bottom: 3px solid #00d4ff;
+    border-bottom: 3px solid #5811CA;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 0;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #F2F0F4;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 
 .navbar {
-    background: linear-gradient(90deg, rgba(26, 35, 126, 0.9) 0%, rgba(41, 128, 185, 0.9) 100%);
+    background: linear-gradient(90deg, rgba(88, 17, 202, 0.1) 10%, rgba(55, 28, 156, 0.9) 90%);
     padding: 10px 0;
-    border-bottom: 2px solid #00d4ff;
+    border-bottom: 2px solid #5811CA;
 }
 
 .navbar ul {
@@ -59,37 +61,38 @@ header h1 {
 }
 
 .navbar a:hover {
-    color: #00d4ff;
+    color: #5811CA;
     background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 10px rgba(88, 17, 202, 0.5);
 }
 
 
 main {
     flex: 1; 
     padding: 2em;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(245, 247, 250, 0.92) 100%);
+    background: transparent;
     margin: 2em auto;
     border-radius: 12px;
     width: 90%;
     max-width: 2200px;
-    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.15);
-    border-left: 4px solid #00d4ff;
+    box-shadow: none;
+    border-left: none;
 }
 
 main p {
     line-height: 1.6;
-    color: #1a1a2e;
+    color: #DCD7E5;
     font-size: 1.05em;
-    font-weight: 500;
+    font-weight: 300;
+    font-family: 'Heebo', sans-serif;
 }
 
 footer {
-    background: linear-gradient(90deg, rgba(26, 35, 126, 0.85) 0%, rgba(41, 128, 185, 0.85) 100%);
+    background: linear-gradient(90deg, rgba(88, 17, 202, 0.1) 10%, rgba(55, 28, 156, 0.9) 90%);
     color: white;
     text-align: center;
     padding: 0.8em 0;
-    border-top: 3px solid #00d4ff;
+    border-top: 3px solid #5811CA;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
 }
 
