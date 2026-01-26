@@ -1,0 +1,107 @@
+
+.infographic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin: 2em 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.column div {
+    padding: 20px;
+    background: rgba(88, 17, 202, 0.1);
+    border-radius: 12px;
+    border-left: 4px solid #5811CA;
+}
+
+.left-text {
+    text-align: right;
+}
+
+.left-text div {
+    border-left: none;
+    border-right: 4px solid #5811CA;
+}
+
+.right-text {
+    text-align: left;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.column h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    color: #FFFFFF;
+}
+
+.column p {
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.wifi-card {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 20px;
+    background: rgba(88, 17, 202, 0.1);
+    border-radius: 12px;
+    border-left: 4px solid #5811CA;
+    margin-top: 10px;
+}
+
+.wifi-card h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    color: #FFFFFF;
+}
+
+.wifi-card p {
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .infographic-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .center-image {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .infographic-container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-text {
+        text-align: left;
+    }
+
+    .left-text div {
+        border-left: 4px solid #5811CA;
+        border-right: none;
+    }
+}

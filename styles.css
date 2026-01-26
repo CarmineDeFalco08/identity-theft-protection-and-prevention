@@ -3,8 +3,12 @@
     box-sizing: border-box; 
 }
 
-html, body {
+html {
     height: 100%;
+}
+
+body {
+    min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -13,7 +17,7 @@ html, body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #DCD7E5;
+    color: #FFFFFF;
 }
 
 
@@ -70,25 +74,59 @@ header h1 {
 main {
     flex: 1; 
     padding: 2em;
-    background: transparent;
+    background: rgba(88, 17, 202, 0.1);
     margin: 2em auto;
     border-radius: 12px;
     width: 90%;
     max-width: 2200px;
     box-shadow: none;
-    border-left: none;
+    border-left: 4px solid #5811CA;
+    border-right: 4px solid #5811CA;
 }
 
 main p {
     line-height: 1.6;
-    color: #DCD7E5;
+    color: #FFFFFF;
     font-size: 1.05em;
-    font-weight: 300;
+    font-weight: 500;
     font-family: 'Heebo', sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 main p b {
     font-weight: 700;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table thead {
+    background: linear-gradient(135deg, rgba(88, 17, 202, 0.3) 10%, rgba(55, 28, 156, 0.7) 90%);
+}
+
+table th,
+table td {
+    padding: 1em;
+    text-align: left;
+    border-bottom: 1px solid rgba(88, 17, 202, 0.3);
+}
+
+table th {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table tbody tr:hover {
+    background-color: rgba(88, 17, 202, 0.1);
 }
 
 footer {
